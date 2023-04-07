@@ -1,0 +1,237 @@
+:root {
+  --primary-color: rgb(237, 242, 247); /* primary color*/
+  --secondary-color: rgb(160, 174, 192); /* secondary color*/
+  --primary-background: rgb(11, 15, 25); /* primary background*/
+  --secondary-background: rgb(17, 25, 39); /* secondary background */
+  --border-color: rgb(45, 55, 72);
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+  --info-color: #17a2b8;
+  --light-color: #f8f9fa;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--primary-background);
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 12px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* lib className css */
+.d-flex {
+  display: flex;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.jc-space-between {
+  justify-content: space-between;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.mr-2 {
+  margin-right: 4px;
+}
+
+.mr-4 {
+  margin-right: 16px;
+}
+
+.ml-2 {
+  margin-left: 4px;
+}
+
+.mL-4 {
+  margin-left: 16px;
+}
+
+.danger {
+  color: var(--danger-color);
+}
+
+/* End Lib className css */
+
+/* style input global */
+
+/* ---Style the input element */
+
+input {
+  width: 100%;
+  padding: 10px 0px;
+  margin: 12px 0;
+  color: var(--primary-color);
+  background-color: var(--secondary-background);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Change the background color when the input is focused */
+input:focus {
+  background-color: var(--secondary-background);
+}
+
+/* ---Style the input placeholder */
+input::placeholder {
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+
+/* ---End style the input element */
+
+/* Style the select element */
+select {
+  width: 100%;
+  margin: 12px 0;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 16px;
+  min-width: 100px;
+  background-color: var(--secondary-background);
+  color: var(--primary-color);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* Style the option elements */
+option {
+  background-color: var(--secondary-background);
+  color: var(--primary-color);
+}
+
+/* Change the background color of the select element when it is focused */
+select:focus {
+  background-color: var(--secondary-background);
+}
+
+.accordion-item-content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.accordion-item-content.active {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.bulk-sticky {
+  position: fixed;
+  background-color: var(--secondary-background);
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+  width: 100%;
+  height: 72px;
+  bottom: 0;
+}
+
+.bulk-item {
+  max-width: 1200px;
+  display: flex;
+  margin: auto;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.task-item {
+  padding: 12px 0;
+}
+
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 16px;
+}
+
+.accordion-content {
+  background-color: var(--secondary-background);
+  border: 1px solid rgb(45, 55, 72);
+  padding: 16px;
+}
+.accordion-header {
+  display: flex;
+  background-color: var(--secondary-background);
+  border: 1px solid rgb(45, 55, 72);
+}
+
+.accordion-icon {
+  display: flex;
+  width: 32px;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.checkbox-item {
+  width: 16px;
+}
+
+#message {
+  background-color: var(--secondary-background);
+  width: 100%;
+  color: var(--primary-color);
+  min-height: 100px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+}
